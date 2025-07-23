@@ -1,7 +1,7 @@
 import React, { createContext } from 'react'
 
-import all_products from '../../public/images/all_products'
-import Popular_products from '../../public/images/Popular_products'
+import all_products from '../../src/assets/all_products'
+import Popular_products from '../../src/assets/popular_products'
 
 export const ShopContext = createContext(null)
 
