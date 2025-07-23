@@ -3,7 +3,7 @@ import React from "react";
 import "./PopularProducts.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import propular_products from "../../../public/images/Popular_products";
+import propular_products from "../../assets/popular_products";
 import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 import { useContext } from "react";
