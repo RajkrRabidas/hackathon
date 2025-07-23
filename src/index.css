@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "length";
+  src: url(./assets/gNMEW3NwSYq_9WD3yHQiFQ.woff2);
+}
+@font-face {
+  font-family: "bold";
+  src: url(./assets/fonnts.com-tussilago_bk.otf);
+}
+@font-face {
+  font-family: "bold-italic";
+  src: url(./assets/fonnts.com-tussilago_bd_it.otf);
+}
+@font-face {
+  font-family: "normal";
+  src: url(./assets/fonnts.com-tussilago_bk.otf);
+}
+@font-face {
+  font-family: signature;
+  src: url(./assets/FasthinRegular-vnj67.otf);
+}
+*{
+  box-sizing: border-box;
+  scrollbar-width: none;
+  font-family: poppins, sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+[data-scroll-container] {
+  height: 100%;
+}
+
+
+*::selection{
+  background-color: rgba(250, 128, 114, 0.705);
+}

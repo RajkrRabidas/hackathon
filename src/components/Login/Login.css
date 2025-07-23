@@ -1,0 +1,134 @@
+/* src/components/LoginForm.css */
+.login-container {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  background-image: url("../../../public/images/login-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-position: center;
+    background-position: bottom;
+}
+
+.login-box {
+    max-width: 450px;
+    width: 100%;    
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  color: #000;
+}
+.login-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.login-form h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #000;
+  font-size: 1rem;
+}
+
+.login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.login-form a {
+  color: #aaa;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: right;
+  text-decoration: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.separator {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons button {
+  flex: 1;
+  padding: 0.8rem;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45px;
+}
+
+.google {
+  background-image: url("https://img.icons8.com/color/48/google-logo.png");
+}
+
+.apple {
+  background-image: url("https://img.icons8.com/ios-filled/50/mac-os.png");
+}
+
+.facebook {
+  background-image: url("https://img.icons8.com/ios-filled/50/facebook-new.png");
+}
+
+.login-form p {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #111;
+}
+
+.login-form p a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}

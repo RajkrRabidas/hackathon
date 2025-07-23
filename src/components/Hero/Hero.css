@@ -1,0 +1,105 @@
+.header-blur .logo,
+.header-blur .sub {
+  color: #fff !important;
+}
+#sidebar {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  padding: 2% 8% 6px;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: inherit;
+  transition: background 0.3s, backdrop-filter 0.3s;
+}
+
+.header-blur {
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);color: #fff;
+}
+header .logo {
+  font-size: 2.2rem;
+  letter-spacing: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.sub {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-top: 1px;
+}
+.header h2.header-blur{
+  color: #ddd;
+}
+.header h2 img {
+  width: 100%;
+  height: 100%;
+}
+#sidebar {
+  background-color: #0000007c;
+}
+.navbar {
+  position: relative;
+  text-align: right;
+  padding-top: 3rem;
+}
+.navbar i {
+  position: absolute;
+  top: -5%;
+  right: -5px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar a {
+  margin-bottom: 1rem;
+  color: #ddd;
+  font-size: 3.2rem;
+  font-family: length;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.hero {
+  padding: 0 8%;
+}
+
+.hero-left-side {
+  margin-top: 5rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-left-side h1 {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+}
+.hero-left-side p {
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  font-family: "Open-Sans", sans-serif;
+}
+
+.hero-right-side {
+  width: 50%;
+  position: relative;
+}
+
+.hero-right-side img {
+  width: 100%;
+  height: 36rem;
+  object-fit: contain;
+  position: absolute;
+  top: -18%;
+
+}

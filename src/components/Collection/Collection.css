@@ -1,0 +1,41 @@
+.brand-section[theme="black"]{
+  background-color: #000;
+}
+
+.brand-section[theme="black"]{
+  color: #fff;
+}
+
+.brand-section[theme="black"] .section{
+    color: #fff;
+}
+
+
+.brand-section[theme="cyan"]{
+  background-color: #80becc;
+}
+.brand-section[theme="salmon"]{
+  background-color: salmon;
+}
+.brand-section[theme="white"]{
+  background-color: #fff;
+}
+
+
+
+
+
+.video-div {
+  clip-path: circle(var(--clip) at 50% 50%);
+}
+
+
+.row{
+  padding: 5px 0;
+}
+
+
+.elem h1{
+  text-transform: uppercase;
+  font-family: length;
+}
