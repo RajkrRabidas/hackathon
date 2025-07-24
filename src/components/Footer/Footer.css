@@ -109,14 +109,15 @@
 
 @media (max-width: 768px) {
   .contact-title {
-    font-size: 42px;
+    font-size: 6rem;
   }
-
   .contact-bottom {
     flex-direction: column;
     gap: 40px;
   }
-
+  .newsletter {
+    flex: 0;
+  }
   .contact-year {
     position: static;
     text-align: right;
