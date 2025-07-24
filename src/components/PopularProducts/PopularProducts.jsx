@@ -12,8 +12,8 @@ import { ShopContext } from "../../Context/context";
 const PopularProducts = () => {
   const [centerIndex, setCenterIndex] = useState(2);
   const { all_products } = useContext(ShopContext);
-  const popularProducts = propular_products.map(popular => {
-    return all_products.find(p => p.id === popular.id) || popular;
+  const popularProducts = propular_products.map((popular) => {
+    return all_products.find((p) => p.id === popular.id) || popular;
   });
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const PopularProducts = () => {
       gsap.fromTo(
         card,
         { scale: 0.8, opacity: 1 },
-        { 
+        {
           width: "100%",
           height: "100%",
           borderRadius: "0",
@@ -44,12 +44,12 @@ const PopularProducts = () => {
 
   return (
     <section className="popular-products w-full bg-black text-white py-10 px-4 md:px-20 overflow-hidden">
-      <h2 className="md:text-7xl text-center font-bold pb-15 tracking-tight">
+      <h2 className="popular-heading text-center font-bold pb-15 tracking-tight">
         POPULAR PRODUCTS
       </h2>
 
       <div className="relative flex items-center justify-center pb-15">
-        <div className="flex gap-6 transition-transform duration-500 ease-in-out">
+        <div className="items flex gap-6 transition-transform duration-500 ease-in-out">
           {popularProducts.map((Pproduct, idx) => {
             const isCenter = idx === centerIndex;
             const offset = idx - centerIndex;
@@ -62,11 +62,13 @@ const PopularProducts = () => {
               ${offset === -1 ? "-rotate-6" : offset === 1 ? "rotate-6" : ""}
               `}
               >
-                <Link to={`/products/${Pproduct.id}`}><img
-                  src={Pproduct.image}
-                  alt={Pproduct.name}
-                  className="w-full h-full object-cover"
-                /></Link>
+                <Link to={`/products/${Pproduct.id}`}>
+                  <img
+                    src={Pproduct.image}
+                    alt={Pproduct.name}
+                    className="w-96 h-full object-cover"
+                  />
+                </Link>
                 <div className="absolute bottom-4 left-4 text-white text-md font-medium">
                   {Pproduct.name}
                 </div>

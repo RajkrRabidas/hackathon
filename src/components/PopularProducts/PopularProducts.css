@@ -1,12 +1,35 @@
-.popular-products h2{
-    font-size: 7rem;
-    font-family: length;
+.popular-products h2 {
+  font-size: 7rem;
+  font-family: length;
 }
 
-.popular-products{
-    margin: auto;
-    width: 80%;
-    height: 60%;
-    border-radius: 2rem;
-    overflow: hidden;
+.popular-products {
+  margin: auto;
+  width: 80%;
+  height: 60%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .items {
+    flex-direction: column;
+  }
+  .popular-card {
+    scale: 1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    position: relative;
+  }
+  .popular-products.active {
+    transform: scale(1.1);
+    z-index: 20;
+  }
+  .popular-products h2{
+    font-size: 6rem;
+    padding-bottom: 1.5rem;
+  }
 }

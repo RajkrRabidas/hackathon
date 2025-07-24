@@ -54,6 +54,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
+    
     if (headingRef.current) {
       gsap.fromTo(
         headingRef.current,
@@ -89,7 +90,7 @@ const Hero = () => {
   return (
     <div className="navbar-container relative transition-all duration-500 bg-[#fdf2e9]">
       <section className="hero relative h-screen w-full md:px-12 transition-all duration-500">
-        <div className="flex items-center justify-around h-full gap-8">
+        <div className="hero-flex flex items-center justify-around h-full gap-8">
           <div className="hero-left-side max-w-[500px]">
             <h1
               ref={headingRef}

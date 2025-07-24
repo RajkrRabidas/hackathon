@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
+import './OfferSection.css';
 
 const OfferSection = () => {
   const sectionRef = useRef(null);
@@ -34,13 +35,13 @@ const OfferSection = () => {
     <div ref={sectionRef} className="flex font-montserrat flex-col h-full lg:flex-row items-center justify-between px-8 py-16 bg-[#D1D1D3]">
       {/* Left Content */}
       <div className="lg:w-1/2 w-full text-center lg:text-left">
-        <h2 className="text-6xl font-bold mb-4">Act Fast! Incredible Offers Expire Soon</h2>
+        <h2 className="heading text-6xl font-bold mb-4">Act Fast! Incredible Offers Expire Soon</h2>
         <p className="text-gray-600 mb-6">
           Nam curse augue diam ac curabitur nisi donec efficitur conubia fringilla ipsum viverra placerat.
         </p>
 
         {/* Timer */}
-        <div className="flex justify-center items-center lg:justify-start gap-15 text-center font-semibold text-xl mb-6">
+        <div className="timmer flex justify-center items-center lg:justify-start gap-15 text-center font-semibold text-xl mb-6">
           <div>
             <p className='text-6xl'>{timeLeft.days}</p>
             <span className="text-lg text-gray-500">Days</span>

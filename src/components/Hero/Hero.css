@@ -17,8 +17,9 @@ header {
 }
 
 .header-blur {
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(8px);color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  color: #fff;
 }
 header .logo {
   font-size: 2.2rem;
@@ -30,7 +31,7 @@ header .logo {
   letter-spacing: 1px;
   margin-top: 1px;
 }
-.header h2.header-blur{
+.header h2.header-blur {
   color: #ddd;
 }
 .header h2 img {
@@ -101,5 +102,42 @@ header .logo {
   object-fit: contain;
   position: absolute;
   top: -18%;
-
 }
+
+@media (max-width: 900px) {
+  .hero-left-side h1 {
+    font-size: 3rem;
+  }
+  .hero-right-side img {
+    width: 100%;
+    height: auto;
+    top: -10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+  }
+  .hero-left-side {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 6rem;
+  }
+  .hero-left-side h1 {
+    font-size: 2.7rem;
+    text-align: left;
+  }
+  .hero-right-side {
+    position: relative;
+    margin-top: 2rem;
+  }
+  .hero-right-side img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+
